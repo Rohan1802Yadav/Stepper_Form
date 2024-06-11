@@ -32,23 +32,23 @@ const Step2 = ({ nextStep, prevStep }) => {
           <input
             type="checkbox"
             name="companyField"
-            value="field1"
-            checked={formik.values.companyField.includes('field1')}
+            value="ruby"
+            checked={formik.values.companyField.includes('ruby')}
             onChange={formik.handleChange}
             className="form-check-input"
           />
-          Field 1
+          Ruby
         </label>
         <label>
           <input
             type="checkbox"
             name="companyField"
-            value="field2"
-            checked={formik.values.companyField.includes('field2')}
+            value="ai"
+            checked={formik.values.companyField.includes('ai')}
             onChange={formik.handleChange}
             className="form-check-input"
           />
-          Field 2
+          AI
         </label>
         {formik.touched.companyField && formik.errors.companyField ? (
           <div className="error">{formik.errors.companyField}</div>
